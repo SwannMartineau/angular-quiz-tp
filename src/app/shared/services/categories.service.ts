@@ -22,10 +22,12 @@ export class CategoriesService {
   }
 
   getCategoryByID(id: number){
-    const isCategory = this.categoriesContent.find((a) => a.id === id);
-    if (isCategory) {
-      this.selectedCategory = isCategory.label;
-      return;
-    }
+    const url = `http://localhost:3000/categories?id=${id}`;
+    this.http.get(url).subscribe((isCategory: any) => {
+      if (isCategory) {
+        this.selectedCategory = isCategory[0].label;
+        return;
+      }
+    });
   }
 }
