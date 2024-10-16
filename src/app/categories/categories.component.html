@@ -1,1 +1,3 @@
-<p>categories works!</p>
+<section class="categories_container" *ngFor="let content of categoriesContent; let i = index">
+    <h4 class="categories_label"><b>Category {{ i + 1 }} :</b> {{ content?.label }}</h4>
+</section>
