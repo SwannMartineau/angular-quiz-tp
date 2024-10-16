@@ -7,6 +7,8 @@ import { Injectable } from '@angular/core';
 
 export class CategoriesService {
   categoriesContent: any[] = []
+  selectedCategory: string = '';
+
 
   constructor(private http: HttpClient) { }
 
@@ -17,5 +19,13 @@ export class CategoriesService {
         this.categoriesContent.push(category);
       }
     });
+  }
+
+  getCategoryByID(id: number){
+    const isCategory = this.categoriesContent.find((a) => a.id === id);
+    if (isCategory) {
+      this.selectedCategory = isCategory.label;
+      return;
+    }
   }
 }

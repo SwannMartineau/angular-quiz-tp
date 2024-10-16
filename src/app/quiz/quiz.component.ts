@@ -19,6 +19,7 @@ export class QuizComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
+      this.quizService.categoryID = params['categorie'];
       this.quizService.playerName = params['playerName'];
       this.playerName = params['playerName'];
     });
