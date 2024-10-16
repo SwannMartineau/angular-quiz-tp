@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { QuizService } from "../../shared/services/quiz.service";
 import { Router } from "@angular/router";
+import { CategoriesService } from 'src/app/shared/services/categories.service';
 
 @Component({
   selector: 'app-result',
@@ -12,7 +13,7 @@ export class ResultComponent implements OnInit {
   scoreTotal = this.quizService.quizContent.length;
   playerName = this.quizService.playerName;
 
-  constructor(private quizService: QuizService, private router: Router) { }
+  constructor(private quizService: QuizService, private router: Router, private categoriesService: CategoriesService) { }
 
   ngOnInit(): void {
     this.quizService.checkAnswers();
@@ -22,6 +23,7 @@ export class ResultComponent implements OnInit {
   goToHome() {
     this.router.navigate(['/']);
     this.quizService.resetQuiz();
+    this.categoriesService.resetCategory();
   }
 
   getGifUrl() {

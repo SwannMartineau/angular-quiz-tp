@@ -30,4 +30,9 @@ export class CategoriesService {
       }
     });
   }
+
+  resetCategory() {
+    this.categoriesContent = [];
+    this.selectedCategory = '';
+  }
 }
