@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from "@angular/router";
 import { CategoriesService } from '../shared/services/categories.service';
+import { QuizService } from '../shared/services/quiz.service';
 
 @Component({
   selector: 'app-categories',
@@ -9,9 +11,16 @@ import { CategoriesService } from '../shared/services/categories.service';
 export class CategoriesComponent implements OnInit {
   categoriesContent: any[] = this.categoriesService.categoriesContent;
 
-  constructor(private categoriesService: CategoriesService) { }
+  constructor(private categoriesService: CategoriesService, private quizService: QuizService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     this.categoriesService.getCategories();
+    this.route.params.subscribe(params => {
+      this.quizService.playerName = params['playerName'];
+    })
+  }
+
+  questionsOnClick(categoryId: number) {
+    this.router.navigate(['/quiz', categoryId, this.quizService.playerName]);
   }
 }
