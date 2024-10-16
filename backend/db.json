@@ -1,84 +1,164 @@
 {
-  "questions": [
+  "categories": [
     {
       "id": 1,
-      "questionLabel": "What is a component in Angular?"
+      "label" : "Angular"
     },
     {
       "id": 2,
-      "questionLabel": "Explain the purpose of the NgModule in Angular."
+      "label" : "React"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "questionLabel": "What is a component in Angular?",
+      "categoriesID" : 1
+    },
+    {
+      "id": 2,
+      "questionLabel": "Explain the purpose of the NgModule in Angular.",
+      "categoriesID" : 1
     },
     {
       "id": 3,
-      "questionLabel": "How do you create a new Angular application?"
+      "questionLabel": "How do you create a new Angular application?",
+      "categoriesID" : 1
     },
     {
       "id": 4,
-      "questionLabel": "What is data binding in Angular, and what are the different types of data binding?"
+      "questionLabel": "What is data binding in Angular, and what are the different types of data binding?",
+      "categoriesID" : 1
     },
     {
       "id": 5,
-      "questionLabel": "Explain the difference between {{}} (interpolation) and [property] (property binding) in Angular templates."
+      "questionLabel": "Explain the difference between {{}} (interpolation) and [property] (property binding) in Angular templates.",
+      "categoriesID" : 1
     },
     {
       "id": 6,
-      "questionLabel": "What is event binding in Angular, and how is it implemented?"
+      "questionLabel": "What is event binding in Angular, and how is it implemented?",
+      "categoriesID" : 1
     },
     {
       "id": 7,
-      "questionLabel": "What is Angular CLI, and how do you use it to generate components?"
+      "questionLabel": "What is Angular CLI, and how do you use it to generate components?",
+      "categoriesID" : 1
     },
     {
       "id": 8,
-      "questionLabel": "What is a directive in Angular? Can you name some built-in directives?"
+      "questionLabel": "What is a directive in Angular? Can you name some built-in directives?",
+      "categoriesID" : 1
     },
     {
       "id": 9,
-      "questionLabel": "Explain the purpose of the Angular router and how to configure routes in an Angular application."
+      "questionLabel": "Explain the purpose of the Angular router and how to configure routes in an Angular application.",
+      "categoriesID" : 1
     },
     {
       "id": 10,
-      "questionLabel": "What is dependency injection in Angular, and why is it important?"
+      "questionLabel": "What is dependency injection in Angular, and why is it important?",
+      "categoriesID" : 1
     },
     {
       "id": 11,
-      "questionLabel": "How do you communicate between parent and child components in Angular?"
+      "questionLabel": "How do you communicate between parent and child components in Angular?",
+      "categoriesID" : 1
     },
     {
       "id": 12,
-      "questionLabel": "What is a service in Angular, and when should you use it?"
+      "questionLabel": "What is a service in Angular, and when should you use it?",
+      "categoriesID" : 1
     },
     {
       "id": 13,
-      "questionLabel": "What is the purpose of the ngFor directive in Angular?"
+      "questionLabel": "What is the purpose of the ngFor directive in Angular?",
+      "categoriesID" : 1
     },
     {
       "id": 14,
-      "questionLabel": "Explain the concept of modules in Angular and their role in organizing an application."
+      "questionLabel": "Explain the concept of modules in Angular and their role in organizing an application.",
+      "categoriesID" : 1
     },
     {
       "id": 15,
-      "questionLabel": "What is Angular CLI's ng serve command used for?"
+      "questionLabel": "What is Angular CLI's ng serve command used for?",
+      "categoriesID" : 1
     },
     {
       "id": 16,
-      "questionLabel": "What is Angular's two-way data binding, and how does it work?"
+      "questionLabel": "What is Angular's two-way data binding, and how does it work?",
+      "categoriesID" : 1
     },
     {
       "id": 17,
-      "questionLabel": "What is Angular's trackBy function, and why is it used with ngFor?"
+      "questionLabel": "What is Angular's trackBy function, and why is it used with ngFor?",
+      "categoriesID" : 1
     },
     {
       "id": 18,
-      "questionLabel": "How can you handle HTTP requests in Angular?"
+      "questionLabel": "How can you handle HTTP requests in Angular?",
+      "categoriesID" : 1
     },
     {
       "id": 19,
-      "questionLabel": "What are Angular pipes, and can you give some examples of built-in pipes?"
+      "questionLabel": "What are Angular pipes, and can you give some examples of built-in pipes?",
+      "categoriesID" : 1
     },
     {
       "id": 20,
-      "questionLabel": "Explain the concept of lazy loading in Angular and when it's beneficial."
+      "questionLabel": "Explain the concept of lazy loading in Angular and when it's beneficial.",
+      "categoriesID" : 1
+    },
+    {
+      "id": 21,
+      "questionLabel": "What is a component in React?",
+      "categoriesID": 2
+    },
+    {
+      "id": 22,
+      "questionLabel": "Explain the purpose of JSX in React.",
+      "categoriesID": 2
+    },
+    {
+      "id": 23,
+      "questionLabel": "What is the difference between functional components and class components in React?",
+      "categoriesID": 2
+    },
+    {
+      "id": 24,
+      "questionLabel": "How do you manage state in a React component?",
+      "categoriesID": 2
+    },
+    {
+      "id": 25,
+      "questionLabel": "What is the purpose of props in React?",
+      "categoriesID": 2
+    },
+    {
+      "id": 26,
+      "questionLabel": "Explain the concept of lifting state up in React.",
+      "categoriesID": 2
+    },
+    {
+      "id": 27,
+      "questionLabel": "What is the useEffect hook in React, and how does it work?",
+      "categoriesID": 2
+    },
+    {
+      "id": 28,
+      "questionLabel": "What is the virtual DOM in React, and how does it improve performance?",
+      "categoriesID": 2
+    },
+    {
+      "id": 29,
+      "questionLabel": "How do you handle form inputs and events in React?",
+      "categoriesID": 2
+    },
+    {
+      "id": 30,
+      "questionLabel": "What is React Router, and how do you configure routes in a React application?",
+      "categoriesID": 2
     }
   ],
   "answers": [
@@ -480,6 +560,206 @@
     {
       "questionId": 20,
       "answerLabel": "Lazy loading in Angular is a technique for defining routes.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 21,
+      "answerLabel": "A reusable piece of UI.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 21,
+      "answerLabel": "A function for handling HTTP requests.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 21,
+      "answerLabel": "A type of CSS style.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 21,
+      "answerLabel": "A database query function.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 22,
+      "answerLabel": "JSX allows you to write HTML-like syntax in React.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 22,
+      "answerLabel": "JSX is used for routing in React.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 22,
+      "answerLabel": "JSX is a database management tool.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 22,
+      "answerLabel": "JSX is a CSS preprocessor.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 23,
+      "answerLabel": "Functional components are stateless, while class components can have state.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 23,
+      "answerLabel": "Class components are only used for routing.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 23,
+      "answerLabel": "Functional components can only render HTML.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 23,
+      "answerLabel": "There is no difference between functional and class components.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 24,
+      "answerLabel": "State is managed using the useState hook in functional components.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 24,
+      "answerLabel": "State is always managed using plain JavaScript.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 24,
+      "answerLabel": "State is managed using the HTML DOM API.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 24,
+      "answerLabel": "State cannot be managed in React.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 25,
+      "answerLabel": "Props are used to pass data from parent to child components.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 25,
+      "answerLabel": "Props are used to define CSS styles.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 25,
+      "answerLabel": "Props are used for making HTTP requests.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 25,
+      "answerLabel": "Props are used to configure routing in React.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 26,
+      "answerLabel": "Lifting state up means sharing state between components by moving it to their common ancestor.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 26,
+      "answerLabel": "Lifting state up is a way to bind events to elements.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 26,
+      "answerLabel": "Lifting state up is a method of form validation.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 26,
+      "answerLabel": "Lifting state up is a CSS styling technique.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 27,
+      "answerLabel": "The useEffect hook allows you to perform side effects in functional components.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 27,
+      "answerLabel": "The useEffect hook is used for event handling.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 27,
+      "answerLabel": "The useEffect hook is a way to style components.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 27,
+      "answerLabel": "The useEffect hook is used for routing.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 28,
+      "answerLabel": "The virtual DOM allows React to update only the changed parts of the real DOM, improving performance.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 28,
+      "answerLabel": "The virtual DOM is used to manage HTTP requests.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 28,
+      "answerLabel": "The virtual DOM is used to bind events to elements.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 28,
+      "answerLabel": "The virtual DOM is used for routing in React applications.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 29,
+      "answerLabel": "Form inputs in React are handled by using controlled components where the state manages the input values.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 29,
+      "answerLabel": "Form inputs in React are handled directly by the HTML DOM.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 29,
+      "answerLabel": "Form inputs in React are managed using CSS.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 29,
+      "answerLabel": "Form inputs in React are not supported.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 30,
+      "answerLabel": "React Router is a library used for routing between different views in a React application.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 30,
+      "answerLabel": "React Router is used for handling HTTP requests.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 30,
+      "answerLabel": "React Router is a CSS framework for styling React applications.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 30,
+      "answerLabel": "React Router is a database management tool.",
       "isCorrect": false
     }
   ],
