@@ -13,7 +13,9 @@ export class CategoriesService {
   getCategories() {
     const url = 'http://localhost:3000/categories';
     this.http.get(url).subscribe((categories: any) => {
-      this.categoriesContent = categories;
+      for (let category of categories) {
+        this.categoriesContent.push(category);
+      }
     });
   }
 }
