@@ -1,3 +1,9 @@
-<section class="categories_container" *ngFor="let content of categoriesContent; let i = index">
-    <h4 class="categories_label" (click)="questionsOnClick(content.id)"><b>Category {{ i + 1 }} :</b> {{ content?.label }}</h4>
-</section>
+<div class="container">
+    <label for="site-search">Search:</label>
+    <input type="search" id="site-search" name="q" #text/>
+    <button (click)="filterCat(text.value)">Search</button>
+    <button (click)="reset()">Reset</button>
+    <section class="categories_container" *ngFor="let content of categoriesContent; let i = index">
+        <h4 class="categories_label" (click)="questionsOnClick(content.id)"><b>Category {{ i + 1 }} :</b> {{ content?.label }}</h4>
+    </section>
+</div>

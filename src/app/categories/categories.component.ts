@@ -20,6 +20,17 @@ export class CategoriesComponent implements OnInit {
     })
   }
 
+  filterCat(text: string): void {
+    this.categoriesContent = this.categoriesService.categoriesContent.filter(
+      categoriesContent => categoriesContent?.label.toLowerCase().includes(text.toLowerCase())
+    );
+  }
+
+  reset() {
+    this.categoriesContent = this.categoriesService.categoriesContent;
+      return;
+  }
+
   questionsOnClick(categoryId: number) {
     this.router.navigate(['/quiz', categoryId, this.quizService.playerName]);
   }
